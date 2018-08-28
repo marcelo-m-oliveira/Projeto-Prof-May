@@ -17,147 +17,129 @@
 <body class="cor-fundo">
     <!--Barra de navegação-->
     <div class="container-fluid">
-        <nav class="navbar navbar-default navbar-custom">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"></a>
-            </div>
-            <div id="barra-navegacao" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#Inicio">Inicio</a>
+        <nav class="navbar navbar-expand-lg navbar-light" style=" background-color: #e3f2fd; ">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra-navegacao" aria-controls="barra-navegacao"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barra-navegacao">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Inicio">Inicio</a>
                     </li>
-                    <li>
-                        <a href="#Sobre-nos">Sobre nós</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Produtos">Produtos</a>
                     </li>
-                    <li>
-                        <a href="#Produtos">Produtos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Sobre-nos">Sobre nós</a>
                     </li>
-                    <li>
-                        <a href="#Fale-conosco">Fale conosco</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Login">Login</a>
                     </li>
-                    <li>
-                        <a href="#Login">Login</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Cadastrar">Cadastrar</a>
                     </li>
-                    <li>
-                        <a href="#Cadastrar">Cadastrar</a>
-                    </li>
-                    <!--  <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastrar
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Perfil</a>
-                            </li>
-                            <li>
-                                <a href="#">Sair</a>
-                            </li>
-                        </ul>
-                    </li>
-                -->
                 </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
             </div>
         </nav>
     </div>
     <!--Inicio Slide-->
     <div id="Inicio">
         <div class="container-fluid">
-            <div id="carousel" class="carousel slide">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li class="active" data-target="#carousel" data-slide-to="0"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner img" role="listbox">
-                    <div class="item active">
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <img class="img-responsive" src="imagens/baner_superior4.jpg " alt="">
-                            <div class="carousel-caption">
-                                Primeiro slide
-                            </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="img-responsive d-block w-100" src="imagens/baner_superior4.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Slide 1</h1>
+                            <p class="lead">......................</p>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <img class="img-responsive" src="imagens/baner_superior4.jpg" alt="">
-                            <div class="carousel-caption">
-                                Segundo slide
-                            </div>
+                    <div class="carousel-item">
+                        <img class="img-responsive d-block w-100" src="imagens/baner_superior4.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Slide 2</h1>
+                            <p class="lead">......................</p>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <img class="img-responsive" src="imagens/baner_superior4.jpg" alt="">
-                            <div class="carousel-caption">
-                                Terceiro slide
-                            </div>
+                    <div class="carousel-item">
+                        <img class="img-responsive d-block w-100" src="imagens/baner_superior4.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Slide 3</h1>
+                            <p class="lead">......................</p>
                         </div>
                     </div>
                 </div>
-                <a href="#carousel" class="left carousel-control" data-slide="prev">
-                    <i class="glyphicon glyphicon-chevron-left"></i>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
                 </a>
-                <a href="#carousel" class="right carousel-control" data-slide="next">
-                    <i class="glyphicon glyphicon-chevron-right"></i>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Proximo</span>
                 </a>
             </div>
         </div>
-    </div>
-    <!--Fim Slide-->
-    <div align="center" id="Sobre-nos" class="container">
-        <h1> Sobre nós</h1>
-        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-        </p>
-    </div>
-    <div align="center" class="container">
-        <h1> Sobre nós</h1>
-        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-        </p>
-    </div>
-    <div align="center" class="container">
-        <h1> Sobre nós</h1>
-        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-        </p>
-    </div>
-    <div align="center" class="container">
-        <h1> Sobre nós</h1>
-        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-        </p>
-    </div>
-    <div align="center" class="container">
-        <h1> Sobre nós</h1>
-        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-        </p>
-    </div>
-    <!--Inicio Rodapé-->
-    <div class="footer">
-        <p>&copy; 2018 Desenvolvido por
-            <a href="https://www.facebook.com/Marcelo.M.de.Olliveira">Marcelo Moreira de Oliveira</a>
-            e
-            <a href="https://www.facebook.com/lucas.santana.1010?fb_dtsg_ag=AdwtomGwWJS56DfY1SaEx4v77RvekeRTRL7X1b9DlfCNpA%3AAdxQ8OPz8GMnr-jszFOOnFyezKmPx0HkONSNOJf16MZlCg">
-                Lucas de Sousa Santana</a>
-        </p>
-    </div>
-    <!--Fim Rodapé-->
+        <!--Fim Slide-->
+        <div align="center" id="Sobre-nos" class="container">
+            <h1> Sobre nós</h1>
+            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+        </div>
+        <div align="center" class="container">
+            <h1> Sobre nós</h1>
+            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+        </div>
+        <div align="center" class="container">
+            <h1> Sobre nós</h1>
+            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+        </div>
+        <div align="center" class="container">
+            <h1> Sobre nós</h1>
+            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+        </div>
+        <div align="center" class="container">
+            <h1> Sobre nós</h1>
+            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+        </div>
+        <!--Inicio Rodapé-->
+        <div class="footer">
+            <p>&copy; 2018 Desenvolvido por
+                <a href="https://www.facebook.com/Marcelo.M.de.Olliveira">Marcelo Moreira de Oliveira</a>
+                e
+                <a href="https://www.facebook.com/lucas.santana.1010?fb_dtsg_ag=AdwtomGwWJS56DfY1SaEx4v77RvekeRTRL7X1b9DlfCNpA%3AAdxQ8OPz8GMnr-jszFOOnFyezKmPx0HkONSNOJf16MZlCg">
+                    Lucas de Sousa Santana</a>
+            </p>
+        </div>
+        <!--Fim Rodapé-->
 
-    <!--   <div class="scrollup">
+        <!--   <div class="scrollup">
         <a href="#">
             <i class="icon-up-open"></i>
         </a>
     </div> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
 </body>
 
 </html>

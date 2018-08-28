@@ -1,0 +1,36 @@
+        <h1 class="display-3 text-center my-5">Produtos</h1>
+    </div>
+    <div class="row mb-5">
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img class="img-responsive card-img-top" src="imagens/100-salgados-fritos-para-festa.jpg">
+                <div class="card card-body">
+                    <h4 class="card-title">Coxinha</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">asidbpasuidgyuoasdgasd</h6>
+                    <p>XXXXXXXXXxxxxxxxXXXXXXX</p>
+                    <a href="#" class="btn btn-primary">Comprar R$ 4,00</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card " style="width: 18rem;">
+                <img class=" img-responsive card-img-top " src="imagens/esfirra-aberta-de-carne-para-diabeticos.jpg ">
+                <div class="card card-body ">
+                    <h4 class="card-title ">Esfirra</h4>
+                    <h6 class="card-subtitle mb-2 text-muted ">asidbpasuidgyuoasdgasd</h6>
+                    <p>XXXXXXXXXxxxxxxxXXXXXXX</p>
+                    <a href="# " class="btn btn-primary ">Comprar R$ 4,00</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img class="img-responsive card-img-top " src="imagens/quibe-de-bacalhau.jpg ">
+                <div class="card card-body ">
+                    <h4 class="card-title ">Quibe</h4>
+                    <h6 class="card-subtitle mb-2 text-muted ">asidbpasuidgyuoasdgasd</h6>
+                    <p>XXXXXXXXXxxxxxxxXXXXXXX</p>
+                    <a href="# " class="btn btn-primary ">Comprar R$ 4,00</a>
+                </div>
+            </div>
+        </div>

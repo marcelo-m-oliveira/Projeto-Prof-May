@@ -1,0 +1,21 @@
+        <div align="center" id="Sobre-nos" class="container">
+            <h1> Sobre nós</h1>
+            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2018 Desenvolvido por
+            <a href="https://www.facebook.com/Marcelo.M.de.Olliveira">Marcelo Moreira de Oliveira</a>
+            e
+            <a href="https://www.facebook.com/lucas.santana.1010?fb_dtsg_ag=AdwtomGwWJS56DfY1SaEx4v77RvekeRTRL7X1b9DlfCNpA%3AAdxQ8OPz8GMnr-jszFOOnFyezKmPx0HkONSNOJf16MZlCg">
+                Lucas de Sousa Santana</a>
+        </p>
+    </div>
+
+    <div class="scrollup">
+        <a href="#">
+            <i class="icon-up-open"></i>
+        </a>
+    </div>

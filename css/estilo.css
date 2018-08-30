@@ -1,21 +1,16 @@
 /*Inicio navbar*/
-
 .navbar-custom {
     background-color: rgba(28, 84, 175, .1);
 }
 
 /*Fim navbar*/
-
 /*Inicio fundo*/
-
 .cor-fundo {
     background-color: rgb(232, 234, 237);
 }
 
 /*Inicio fundo*/
-
 /*Inicio Rodapé*/
-
 .footer {
     text-align: center;
 }
@@ -30,39 +25,25 @@
 }
 
 .footer a:hover,
+.footer {
+    background: #181A1C;
+    text-align: center;;
+}
+
+.footer>p {
+    color: #fff;
+    margin: 0;
+}
+
+.footer a {
+    color: #FECE1A;
+}
+
+.footer a:hover,
 .footer a:focus {
     text-decoration: underline;
 }
 
-.scrollup {
-    text-align: center;
-    cursor: pointer;
-    vertical-align: middle;
-    width: 39px;
-    height: 39px;
-    border-radius: 5px;
-    font-size: 20px;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    border: 1px solid #fff;
-    display: none;
-    background: #FECE1A;
-}
-
-.scrollup>a {
-    position: relative;
-    top: 7px;
-    color: #fff;
-}
-
 /*Fim Rodapé*/
-
 /*img*/
-
-.img {
-
-    text-align: center;
-}
-
 /*Fim img*/

@@ -27,7 +27,7 @@
 .footer a:hover,
 .footer {
     background: #181A1C;
-    text-align: center;;
+    text-align: center;
 }
 
 .footer>p {
@@ -46,4 +46,9 @@
 
 /*Fim Rodapé*/
 /*img*/
+.img-carousel{
+
+    width: 1400px; 
+    height: 580px;
+}
 /*Fim img*/

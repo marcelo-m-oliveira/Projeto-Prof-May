@@ -52,3 +52,18 @@
     height: 580px;
 }
 /*Fim img*/
+
+.salgados{
+    height: 35%;
+    width: 100%;
+}
+
+.produtos{
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 100px;
+    margin-bottom: 50px
+
+}
+

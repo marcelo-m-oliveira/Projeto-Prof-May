@@ -116,7 +116,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Coxinha</h5>
                     <p class="card-subtitle mb-2 text-muted my-3">A coxinha mais top que vc vai comer nessa vida</p>
-                    <a href="#" class="btn btn-outline-success">Comprar R$ 1,00</a>
+                    <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">A melhor</small>
@@ -128,7 +128,7 @@
                     <h5 class="card-title">Esfirra</h5>
                     <p class="card-subtitle mb-2 text-muted my-3">Uma cópia descarada do Habib's, porém bem mais
                         gostosa (e mais recheada tbm rs)</p>
-                    <a href="#" class="btn btn-outline-success card-btn-bottom">Comprar R$ 1,00</a>
+                    <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">Recheadíssima</small>
@@ -139,7 +139,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Quibe</h5>
                     <p class="card-subtitle mb-2 text-muted my-3">Quibe sempre é top né? Compra logo essa delícia!</p>
-                    <a href="#" class="btn btn-outline-success">Comprar R$ 1,00</a>
+                    <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">Topissimo</small>
@@ -269,6 +269,44 @@
         </div>
     </div>
     <!--Fim modal cadastro-->
+
+    <!-- Modal Compra -->
+    <div class="modal fade" id="Comprar" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="idSenhaLogin">Quantidade</label>
+                            <input type="number" class="form-control" id="idQuantidade" placeholder="Quantidade">
+                        </div>
+                        <div class="form-group">
+                            <label class="" for="idEmailLogin">CEP</label>
+                            <input type="email" class="form-control" id="idCep" aria-describedby="CEP"
+                                placeholder="Digite seu CEP">
+                        </div>
+                        <div class="form-group">
+                            <label for="idSenhaLogin">Nº da Casa</label>
+                            <input type="name" class="form-control" id="idnumero" placeholder="Número">
+                        </div>
+                        <div class="form-group">
+                            <label for="idSenhaLogin">Ponto de referência</label>
+                            <input type="name" class="form-control" id="idreferencia" placeholder="Digite um ponto de referência">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="idEndPadrao">
+                            <label class="form-check-label" for="idCep">Definir endereço de entrega padrão</label>
+                        </div>
+                        <button type="button" class="btn btn-outline-success" type="submit">Confirmar</button>
+                        <div class="modal-footer my-4">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim modal compra -->
 
 
     <div class="scrollup ">

@@ -1,0 +1,69 @@
+/*Inicio navbar*/
+.navbar-custom {
+    background-color: rgba(28, 84, 175, .1);
+}
+
+/*Fim navbar*/
+/*Inicio fundo*/
+.cor-fundo {
+    background-color: rgb(232, 234, 237);
+}
+
+/*Inicio fundo*/
+/*Inicio Rodapé*/
+.footer {
+    text-align: center;
+}
+
+.footer>p {
+    color: #181A1C;
+    margin: 0;
+}
+
+.footer a {
+    color: #FECE1A;
+}
+
+.footer a:hover,
+.footer {
+    background: #181A1C;
+    text-align: center;
+}
+
+.footer>p {
+    color: #fff;
+    margin: 0;
+}
+
+.footer a {
+    color: #FECE1A;
+}
+
+.footer a:hover,
+.footer a:focus {
+    text-decoration: underline;
+}
+
+/*Fim Rodapé*/
+/*img*/
+.img-carousel{
+
+    width: 1400px; 
+    height: 580px;
+}
+/*Fim img*/
+
+.salgados{
+    height: 35%;
+    width: 100%;
+}
+
+.produtos{
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 100px;
+    margin-bottom: 50px
+
+}
+

@@ -12,8 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/Inicio', function () {
+    return view('index');
+})->name('inicio');
+
+Route::get('/Produtos', function (){
+    return view('produtos');
+})->name('produtos');
 
 Auth::routes();
 

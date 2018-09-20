@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--
+* Desenvolvido por: Marcelo Moreira de Oliveira e Lucas de Sousa
+-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Salgados do Buchecha</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+
+<body class="cor-fundo">
+    <!--Barra de navegação-->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" style=" background-color: #e3f2fd; ">
+            <a class="navbar-brand" href="#">
+                <img class="img-responsive" src="imagens/Coxinha.png" width="50" height="50" alt="">Salgados do
+                Buchecha
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra-navegacao"
+                aria-controls="barra-navegacao" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barra-navegacao">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#Fale-conosco">Fale conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Sobre-nos">Sobre nós</a>
+                    </li>
+                </ul>
+
+               	<ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#Login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#Cadastrar">Cadastrar</a>
+                    </li>
+                    <form class="form-inline my-5 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <!--Fim Barra de navegação-->
+    
+    <!--Produtos-->
+    <div class="container">
+        <h1 class="display-3 text-center produtos">Produtos</h1>
+        <div class="card-deck">
+            <div class="card">
+                <img class="salgados card-img-top" src="imagens/100-salgados-fritos-para-festa.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Coxinha</h5>
+                    <p class="card-subtitle mb-2 text-muted my-3">A coxinha mais top que vc vai comer nessa vida</p>
+                    <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">A melhor</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="salgados card-img-top" src="imagens/esfirra-aberta-de-carne-para-diabeticos.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Esfirra</h5>
+                    <p class="card-subtitle mb-2 text-muted my-3">Melhor que a do Habib's (oooopa)</p>
+                    <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Recheadíssima</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="salgados card-img-top" src="imagens/quibe-de-bacalhau.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Quibe</h5>
+                    <p class="card-subtitle mb-2 text-muted my-3">Quibe sempre é top né? Compra logo essa delícia!</p>
+                    <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Topissimo</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="salgados card-img-top" src="imagens/pastelzinho.jpg " alt="Nature">
+                <div class="card-body">
+                    <h5 class="card-title">Pastelzinho</h5>
+                    <p class="card-subtitle mb-2 text-muted my-3">Um delicioso pastelzinho de carne focado na crocância</p>
+                    <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Topissimo</small>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <div class="container my-5">
+        <div class="card-deck">
+            <div class="card">
+                <img class="salgados card-img-top" src="imagens/queijo.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Bolinho de Queijo</h5>
+                    <p class="card-subtitle mb-2 text-muted my-3">Feito pra vegetarianos (e não vegetarianos tbm hahaha)</p>
+                    <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">A melhor</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="salgados card-img-top" src="imagens/carne-seca.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Bolinho de Carne Seca</h5>
+                    <p class="card-subtitle mb-2 text-muted my-3">Melhor que esse só dois desse</p>
+                    <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Recheadíssima</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="salgados card-img-top" src="imagens/calabresa.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Bolinho de Calabresa</h5>
+                    <p class="card-subtitle mb-2 text-muted my-3">Pra levar pra aquele churrascão com a galera</p>
+                    <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Topissimo</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="salgados card-img-top" src="imagens/churros.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Churros</h5>
+                    <p class="card-subtitle mb-2 text-muted my-3">Nossos salgados também são doces, tá?</p>
+                    <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Topissimo</small>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <div align="center" class="container">
+        <a class="btn btn-outline-success my-4" href="index.html">Voltar ao Inicio</a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    </div>
+    <!--Fim Produtos-->
+    
+    <!--Inicio Rodapé-->
+    <div class="footer ">
+        <p>&copy; 2018 Desenvolvido por
+            <a href="https://www.facebook.com/Marcelo.M.de.Olliveira ">Marcelo Moreira de Oliveira</a>
+            e
+            <a href="https://www.facebook.com/lucas.santana.1010?fb_dtsg_ag=AdwtomGwWJS56DfY1SaEx4v77RvekeRTRL7X1b9DlfCNpA%3AAdxQ8OPz8GMnr-jszFOOnFyezKmPx0HkONSNOJf16MZlCg ">
+                Lucas de Sousa Santana</a>
+        </p>
+    </div>
+    <!--Fim Rodapé-->
+
+    <!--Inicio modal fale conosco-->
+    <div class="modal fade" id="Fale-conosco" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <label for="idEmailLogin">Email</label>
+                    <input type="email" name="E-mail" class="form-control my-2" placeholder="nome@exemplo.com">
+                    <label for="#">Comentários</label>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite aqui seus comentérios."
+                            rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" type="submit">Enviar</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim modal fale conosco-->
+
+    <!--Inicio modal login-->
+    <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="" for="idEmailLogin">Email</label>
+                            <input type="email" class="form-control" id="idEmailLogin" aria-describedby="emailHelp"
+                                placeholder="nome@exemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="idSenhaLogin">Senha</label>
+                            <input type="password" class="form-control" id="idSenhaLogin" placeholder="Digite sua Senha">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="idLogin">
+                            <label class="form-check-label" for="idLogin">Manter conectado</label>
+                        </div>
+                        <button type="button" class="btn btn-outline-success" type="submit">Entrar</button>
+                        <div class="modal-footer my-4">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Fim modal login-->
+    
+    <!-- -----------------------------------MODAL CADASTRO--------------------------------- -->
+    <div class="modal fade" id="Cadastrar" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <label class="my-auto" for="idCadastro">Cadastro</label>
+                    <input type="name" name="Nome" class="form-control my-4 " placeholder="Nome">
+                    <input type="name" name="Sobrenome" class="form-control my-4" placeholder="Sobrenome">
+                    <input type="password" name="senha" class="form-control my-4" placeholder="Senha">
+                    <input type="password" name="senha" class="form-control my-4" placeholder="Repita a Senha">
+                    <input type="email" name="E-mail" class="form-control my-4" placeholder="nome@exemplo.com">
+                    <button type="button" class="btn btn-outline-success" type="submit">Cadastrar</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim modal cadastro-->
+
+    <!-- Modal Compra -->
+    <div class="modal fade" id="Comprar" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="idSenhaLogin">Quantidade</label>
+                            <input type="number" class="form-control" id="idQuantidade" placeholder="Quantidade">
+                        </div>
+                        <div class="form-group">
+                            <label class="" for="idEmailLogin">CEP</label>
+                            <input type="email" class="form-control" id="idCep" aria-describedby="CEP"
+                                placeholder="Digite seu CEP">
+                        </div>
+                        <div class="form-group">
+                            <label for="idSenhaLogin">Nº da Casa</label>
+                            <input type="name" class="form-control" id="idnumero" placeholder="Número">
+                        </div>
+                        <div class="form-group">
+                            <label for="idSenhaLogin">Ponto de referência</label>
+                            <input type="name" class="form-control" id="idreferencia" placeholder="Digite um ponto de referência">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="idEndPadrao">
+                            <label class="form-check-label" for="idCep">Definir endereço de entrega padrão</label>
+                        </div>
+                        
+                        <p><b>Frete único: R$7,00</b></p>
+                        
+                        <button type="button" class="btn btn-outline-success" type="submit">Confirmar</button>
+                        <div class="modal-footer my-4">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim modal compra -->
+
+    <div class="scrollup ">
+        <a href="# ">
+            <i class="icon-up-open"></i>
+        </a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery-3.3.1.min.js "></script>
+</body>
+
+</html>

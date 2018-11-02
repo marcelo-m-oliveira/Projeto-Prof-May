@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Salgados do Buchecha</title>
+    <title>Salgados do Celinho e Buchecha</title>
     <link href="{{ asset('http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext')}}" rel='stylesheet'
         type='text/css'>
     <link href="{{ asset('css/app.css')}}" rel="stylesheet" type="text/css">
@@ -23,7 +23,7 @@
     <div class="container-fluid">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light" style=" background-color: #e3f2fd; ">
             <a class="navbar-brand" href="{{ route('inicio')}}">
-                <img class="img-responsive" src="imagens/Coxinha.png" width="50" height="50" alt="">Salgados do
+                <img class="img-responsive" src="imagens/Coxinha.png" width="50" height="50" alt="">Salgados do Celinho e
                 Buchecha
             </a>
 

@@ -20,7 +20,7 @@
 
 <body class="cor-fundo">
     <!--Barra de navegação-->
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-bottom: 100px">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light" style=" background-color: #e3f2fd; ">
             <a class="navbar-brand" href="{{ route('inicio')}}">
                 <img class="img-responsive" src="imagens/Coxinha.png" width="50" height="50" alt="">Salgados do Celinho e
@@ -46,14 +46,36 @@
                         <a class="nav-link" href="#Sobre-nos">Sobre nós</a>
                     </li>
                 </ul>
-
+                @guest
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#Login">Login</a>
+                        <a class="nav-link" href="{{route('login')}}" data-toggle="modal" data-target="#Login">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#Cadastrar">Cadastrar</a>
+                        <a class="nav-link" href="{{route('cadastrar')}}">Cadastrar</a>
                     </li>
+                </ul>
+                @else
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                {{ __('Sair') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                @endguest
+                <ul class="navbar-nav ml-auto">
                     <form class="form-inline my-5 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
@@ -85,8 +107,8 @@
                     <p class="text-left">Telefone:(xx) xxxxx-xxxx</p>
                     <p class="text-left">Marcelo Oliveira (Celinho)</p>
                     <p class="text-left">maxcelo.lima1000@gmail.com</p>
-                    <p class="text-left">Lucas de Sousa (Bochecha)</p>
-                    <p class="text-left">Lucasalgumacoisa@gmail.com</p>
+                    <p class="text-left">Lucas de Sousa (Buchecha)</p>
+                    <p class="text-left">lucas.dsousast@gmail.com</p>
                 </div>
             </div>
 

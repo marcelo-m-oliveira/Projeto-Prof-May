@@ -65,7 +65,7 @@
             <img class="img-responsive card-img-top" src="imagens/esfirra-aberta-de-carne-para-diabeticos.jpg" alt="">
             <div class="card-body">
                 <h5 class="card-title">Esfirra</h5>
-                <p class="card-subtitle mb-2 text-muted my-3">Uma cópia descarada do Habib's, porém bem mais
+                <p class="card-subtitle mb-2 text-muted my-3">Uma cópia descarada do Habibs, porém bem mais
                     gostosa (e mais recheada tbm rs)</p>
                 <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#Comprar">Comprar R$ 1,00</a>
             </div>

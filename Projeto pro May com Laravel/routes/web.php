@@ -5,10 +5,13 @@ Route::get('/', function () {
     return view('index');
 });
 
+<<<<<<< HEAD
 Route::get('Inicio', function () {
     return view('index');
 })->name('inicio');
 
+=======
+>>>>>>> master
 Route::get('/Produtos', function (){
     return view('produtos');
 })->name('produtos');

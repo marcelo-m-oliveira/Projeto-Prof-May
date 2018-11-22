@@ -102,7 +102,7 @@
 </div>
 
 <div align="center" class="container">
-<a class="btn btn-outline-success my-4" href="{{ route('inicio')}}">Voltar ao Inicio</a>
+<a class="btn btn-outline-success my-4" href="/">Voltar ao Inicio</a>
 </div>
 
 <br>

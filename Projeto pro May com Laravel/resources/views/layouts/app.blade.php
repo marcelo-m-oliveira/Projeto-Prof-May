@@ -16,14 +16,15 @@
     <link href="/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('https://use.fontawesome.com/releases/v5.2.0/css/all.css')}}" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="#" href="imagens/Coxinha.png">
 </head>
 
 <body class="cor-fundo">
     <!--Barra de navegação-->
     <div class="container-fluid">
-        <nav class="navbar  fixed-top navbar-expand-lg navbar-light" style=" background-color: #00695c;">
+        <nav class="navbar  fixed-top navbar-expand-lg navbar-light" style=" background-color: #009688;">
             <a class="navbar-brand" href="/">
                 <img class="img-responsive" src="imagens/Coxinha.png" width="50" height="50" alt="">Salgados do Celinho e
                 Buchecha
@@ -42,7 +43,7 @@
                     <a class="nav-link" href="#Produtos">Produtos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#Fale-conosco">Fale conosco</a>
+                    <a class="nav-link" href="#Contatos">Fale conosco</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#Sobre-nos">Sobre nós</a>
@@ -51,10 +52,10 @@
             @guest
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a class="nav-link" href="login">{{ __('Login') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#Cadastrar">Cadastrar</a>
+                    <a class="nav-link" href="register">Cadastrar</a>
                 </li>
             </ul>
             @else
@@ -81,6 +82,7 @@
     </div>
 </nav>
 </div>
+<div class="my-4"></div>
 <!--Fim Barra de navegação-->
 <div>
     @yield('content')
@@ -97,12 +99,11 @@
                 <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.7068718850583!2d-38.949140685751026!3d-12.268105149396277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71437a08bc519e7%3A0xdd480874d06aa699!2sR.+Rio+Paje%C3%BA%2C+15+-+Bras%C3%ADlia%2C+Feira+de+Santana+-+BA%2C+44088-426!5e0!3m2!1spt-BR!2sbr!4v1535582768892"></iframe>
             </div>
         </div>
-        <div class=" col-sm-4 ml-3">
+        <div id="Contatos" class=" col-sm-4 ml-3">
             <h3>Contatos</h3>
             <div class="list-group text-center">
-                <p class="text-left">Telefone:(xx) xxxxx-xxxx</p>
                 <p class="text-left">Marcelo Oliveira (Celinho)</p>
-                <p class="text-left">maxcelo.lima1000@gmail.com</p>
+                <p class="text-left">marcelomra.oliveira@gmail.com</p>
                 <p class="text-left">Lucas de Sousa (Bochecha)</p>
                 <p class="text-left">Lucasalgumacoisa@gmail.com</p>
             </div>
@@ -139,6 +140,8 @@
         <script type="text/javascript" src="{{ URL::to('js/app.js')}}"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
         @stack('scripts')
         <script type="text/javascript">
             $( document ).ready(function(){

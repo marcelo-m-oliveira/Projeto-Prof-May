@@ -78,7 +78,7 @@
     </div>
 </div>
 <div align="center" class="container">
-<a class="btn btn-outline-success my-4" href="{{ route('produtos')}}">Mais produtos</a>
+<a class="btn btn-outline-success my-4" href="produtos">Mais produtos</a>
 </div>
 
 <!--Fim Produtos-->

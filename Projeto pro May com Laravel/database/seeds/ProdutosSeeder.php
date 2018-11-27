@@ -1,50 +1,51 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Faker\Generator as Faker;
 
 class ProdutosSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+    
     public function run()
     {
         DB::table('produtos')->insert([
             'nome' => "Coxinha",
-            'quantidade' => 500,
-            'descricao' => "Frango",
-            'imagem' => "",
-            'preco' => 1.00,
-            'id_categoria' => 1,
-        ]);
-
-        DB::table('produtos')->insert([
-            'nome' => "Esfirra",
-            'quantidade' => 500,
-            'descricao' => "Calabresa",
-            'imagem' => "",
-            'preco' => 1.00,
-            'id_categoria' => 1,
+            'descricao' => "A melhor do Brasil. Sabor: Frango",
+            'valor' => 1.00,
+            'imagem' => "imagens/100-salgados-fritos-para-festa.jpg",
+            'ativo' => "S",
         ]);
 
         DB::table('produtos')->insert([
             'nome' => "Pastelzinho",
-            'quantidade' => 500,
-            'descricao' => "Carne",
-            'imagem' => "",
-            'preco' => 1.00,
-            'id_categoria' => 1,
+            'descricao' => "Focado na crocância. Sabor: Carne",
+            'valor' => 1.00,
+            'imagem' => "imagens/pastelzinho.jpg",
+            'ativo' => "S",
+        ]);
+    
+        DB::table('produtos')->insert([
+            'nome' => "Bolinho",
+            'descricao' => "Maravilhoso puxa-puxa. Sabor: Queijo",
+            'valor' => 1.00,
+            'imagem' => "imagens/queijo.jpg",
+            'ativo' => "S",
         ]);
 
         DB::table('produtos')->insert([
-            'nome' => "Bolinho",
-            'quantidade' => 500,
-            'descricao' => "Queijo",
-            'imagem' => "",
-            'preco' => 1.00,
-            'id_categoria' => 1,
+            'nome' => "Quibe",
+            'descricao' => "Feito especialmente para veganos. Sabor: Bacalhau",
+            'valor' => 1.00,
+            'imagem' => "imagens/quibe-de-bacalhau.jpg",
+            'ativo' => "S",
+        ]);
+
+        DB::table('produtos')->insert([
+            'nome' => "Esfirra",
+            'descricao' => "Melhor que a do Habbibs. Sabor: Carne Seca",
+            'valor' => 1.00,
+            'imagem' => "imagens/esfirra-aberta-de-carne-para-diabeticos.jpg",
+            'ativo' => "S",
         ]);
     }
 }

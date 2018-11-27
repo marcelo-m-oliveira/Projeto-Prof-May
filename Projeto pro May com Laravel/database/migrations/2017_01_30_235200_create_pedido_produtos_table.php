@@ -14,13 +14,17 @@ class CreatePedidoProdutosTable extends Migration
     public function up()
     {
         Schema::create('pedido_produtos', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('pedido_id')->unsigned(); // unsigned: somente inteiros positivos
+            $table->integer('produto_id')->unsigned();  // unsigned: somente inteiros positivos
+            $table->enum('status', ['RE', 'PA', 'CA']); // Reservado, Pago, Cancelado
+            $table->decimal('valor', 6, 2)->default(0);
+            $table->decimal('desconto', 6, 2)->default(0);
+            $table->integer('cupom_desconto_id')->nullable()->unsigned(); // unsigned: somente inteiros positivos
             $table->timestamps();
-            $table->float('quantidade');
-            $table->integer('pedido_id')->unsigned();
             $table->foreign('pedido_id')->references('id')->on('pedidos');
-            $table->integer('produto_id')->unsigned();
             $table->foreign('produto_id')->references('id')->on('produtos');
-            $table->primary(['pedido_id', 'produto_id']);
+            $table->foreign('cupom_desconto_id')->references('id')->on('cupom_descontos');
         });
     }
 

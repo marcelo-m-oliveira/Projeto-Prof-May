@@ -74,5 +74,16 @@ class RegisterController extends Controller
         $user->save();
 
         return redirect()->route('cadastroEnd');
+
+        $endereco = new Endereco();
+        $endereco->rua    = $request->input('rua');
+        $endereco->numero = $request->input('num');
+        $endereco->cep    = $request->input('cep');
+        $endereco->bairro = $request->input('bairro');
+
+        $endereco->user_id = $user->id;
+        $endereco->save();
+
+        return redirect()->route('/');
     }
 }

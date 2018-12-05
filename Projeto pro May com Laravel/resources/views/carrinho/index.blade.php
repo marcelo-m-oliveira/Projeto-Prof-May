@@ -72,7 +72,7 @@
             <div class="ml-auto mr-4">
                 <div class="ml-5 row">
                     <a class="btn btn-outline blue btn-large tooltipped offset-l2 offset-s2 offset-m2" data-position="top" data-delay="50" data-tooltip="Voltar a página inicial para continuar comprando?" href="{{ route('index') }}">Compre Mais!</a>
-                    <form method="POST" action="{{ route('cadastroEnd') }}">
+                    <form method="POST" action="{{ route('carrinho.concluir') }}">
                         {{ csrf_field() }}
                         <input type="hidden" name="pedido_id" value="{{ $pedido->id }}">
                         <button type="submit" class="btn-large green accent-4 col offset-l1 offset-s1 offset-m1 tooltipped" data-position="top" data-delay="50" data-tooltip="Adquirir os produtos concluindo a compra?">

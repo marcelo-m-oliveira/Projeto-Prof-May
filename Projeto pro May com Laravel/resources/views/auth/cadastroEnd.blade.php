@@ -7,7 +7,7 @@
             <div class="card">
                 <h4 class="text-center">Cadastro de Endereço</h4>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('carrinho.concluir') }}">
+                    <form method="POST" action="{{ route('cadastroEnd') }}">
                         {{ csrf_field() }}
                         <div class="input-field">
                             <input id="rua" type="text" name="rua" value="{{ old('rua') }}" class="validate {{ $errors->has('rua') ? ' invalid' : '' }}" required autofocus>

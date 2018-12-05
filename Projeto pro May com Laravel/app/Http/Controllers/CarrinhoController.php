@@ -163,7 +163,7 @@ class CarrinhoController extends Controller
                 'status' => 'PA'
             ]);
 
-        $req->session()->flash('mensagem-sucesso', 'Compra concluída com sucesso!');
+        $req->session()->flash('mensagem-sucesso', 'Compra concluída com sucesso! Agende a entrega do seu pedido! (75) 9 8301-4336');
 
         return redirect()->route('carrinho.compras');
     }

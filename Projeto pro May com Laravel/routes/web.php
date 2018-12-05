@@ -4,11 +4,11 @@ use App\Http\Controllers\RegisterEndController;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('Inicio');
 
 Auth::routes();
 Route::get('/cadastroEndereco', 'RegisterEndController@index')->name('cadastroEnd');
-Route::post('/cadastroEndereco', 'RegisterEndController@store');
+Route::post('/cadastroEndereco', 'auth\RegisterController@store');
 
 Route::get('/produtos', 'HomeController@index')->name('index');
 Route::get('/produto/{id}', 'HomeController@produto')->name('produto');

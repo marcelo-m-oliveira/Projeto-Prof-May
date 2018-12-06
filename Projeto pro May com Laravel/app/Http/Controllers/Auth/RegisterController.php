@@ -62,28 +62,14 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    public function store(Request $request)
+    protected function create(array $data)
     {
-        $user    = new User();
-        $user->name       = $request->input('name');
-        $user->email      = $request->input('email');
-        $password         = $request->input('password');
-        $hashedPassword   = Hash::make($password);
-        $user->password   = $hashedPassword;
-        
-        $user->save();
+        return User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+        ]);
 
-        return redirect()->route('cadastroEnd');
-
-        $endereco = new Endereco();
-        $endereco->rua    = $request->input('rua');
-        $endereco->numero = $request->input('num');
-        $endereco->cep    = $request->input('cep');
-        $endereco->bairro = $request->input('bairro');
-
-        $endereco->user_id = $user->id;
-        $endereco->save();
-
-        return redirect()->route('/');
     }
+
 }

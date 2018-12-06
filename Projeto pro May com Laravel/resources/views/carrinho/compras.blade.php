@@ -50,7 +50,7 @@
                                     @endif
                                 </td>
                                 <td>
-                                    <img width="100" height="100" src="{{ asset($pedido_produto->produto->imagem) }}">
+                                    <img width="100" height="100" src=" {{ asset($pedido_produto->produto->imagem) }}">
                                 </td>
                                 <td>{{ $pedido_produto->produto->nome }}</td>
                                 <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>
@@ -67,7 +67,7 @@
                                 <td colspan="2">
                                     <button type="submit" class="btn-large red col l12 s12 m12 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Cancelar itens selecionados">
                                         Cancelar
-                                    </button>   
+                                    </button>
                                 </td>
                                 <td colspan="3"></td>
                             </tr>
@@ -111,10 +111,10 @@
                             @endphp
                         <tr>
                             <td>
-                                <img width="100" height="100" src="{{ $pedido_produto->produto->imagem }}">
+                                <img width="100" height="100" src="{{ asset($pedido_produto->produto->imagem) }}">
                             </td>
                             <td>{{ $pedido_produto->produto->nome }}</td>
-                            <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>                            
+                            <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>
                             <td>R$ {{ number_format($total_produto, 2, ',', '.') }}</td>
                         </tr>
                         @endforeach

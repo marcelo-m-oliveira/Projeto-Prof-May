@@ -5,6 +5,9 @@ use App\Http\Controllers\RegisterEndController;
 Route::get('/', function () {
     return view('index');
 })->name('Inicio');
+Route::get('/home', function () {
+    return view('index');
+})->name('Inicio');
 
 Auth::routes();
 Route::get('/cadastroEndereco', 'RegisterEndController@index')->name('cadastroEnd');
@@ -22,4 +25,3 @@ Route::post('/carrinho/concluir', 'CarrinhoController@concluir')->name('carrinho
 Route::get('/carrinho/compras', 'CarrinhoController@compras')->name('carrinho.compras');
 Route::post('/carrinho/cancelar', 'CarrinhoController@cancelar')->name('carrinho.cancelar');
 Route::post('/carrinho/desconto', 'CarrinhoController@desconto')->name('carrinho.desconto');
-Route::get('/home', 'HomeController@index')->name('home');

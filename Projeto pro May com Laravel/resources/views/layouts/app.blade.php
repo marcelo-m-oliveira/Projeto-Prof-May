@@ -27,10 +27,10 @@
     <div class="container-fluid">
         <nav class="navbar  fixed-top navbar-expand-lg navbar-light" style=" background-color: #009688;">
             <a class="navbar-brand" href="/">
-                <img class="img-responsive" src="{{ asset('imagens/Coxinha.png')}}" width="50" height="50" alt="">Salgados do Celinho e
+                <img class="img-responsive" src="imagens/Coxinha.png" width="50" height="50" alt="">Salgados do Celinho e
                 Buchecha
             </a>
-
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra-navegacao"
             aria-controls="barra-navegacao" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
                     <a class="nav-link" href="/">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/produtos">Produtos</a>
+                    <a class="nav-link" href="produtos">Produtos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#Contatos">Fale conosco</a>
@@ -85,7 +85,7 @@
                 </li>
             </ul>
             @endguest
-
+        
     </div>
 </nav>
 </div>
@@ -115,7 +115,7 @@
                 <p class="text-left">lucas.dsousast@gmail.com</p>
             </div>
         </div>
-
+        
         <div class="col-sm-3">
             <h3>Social</h3>
             <div class="btn-group-vertical btn-block btn-group-lg" role="group">
@@ -124,7 +124,7 @@
                 <a class="btn btn-outline-warning" href="#"><i class="fab fa-instagram"></i> Instagram</a>
             </div>
             </div>
-
+            
             <div class="col-12 mt-5">
                 <blockquote class="blockquote text-center">
                     <p class="blockquote-footer">&copy; 2018 Desenvolvido por
@@ -134,11 +134,11 @@
                             <a href="https://www.facebook.com/lucas.santana.1010?fb_dtsg_ag=AdwtomGwWJS56DfY1SaEx4v77RvekeRTRL7X1b9DlfCNpA%3AAdxQ8OPz8GMnr-jszFOOnFyezKmPx0HkONSNOJf16MZlCg"><cite
                                 title="Titulo">Lucas de Sousa Santana</cite></a>
                             </p>
-
+                            
                         </blockquote>
-
+                        
                     </div>
-
+                    
                 </div>
             </div>
             <!--Fim Rodapé-->
@@ -156,5 +156,5 @@
                 $('select').material_select();
             });
         </script>
-
+        
         </html>

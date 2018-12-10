@@ -17,7 +17,7 @@
             <form method="POST" action="{{ route('carrinho.adicionar') }}">
                 {{ csrf_field() }}
                 <input type="hidden" name="id" value="{{ $registro->id }}">
-                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">Comprar</button>
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">Comprar</button>   
             </form>
         </div>
         <div class="container">
